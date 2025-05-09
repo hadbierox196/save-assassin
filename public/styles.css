@@ -57,7 +57,7 @@ input[type="text"] {
     width: 100%;
     padding: 0.4rem;
     font-size: 0.8rem;
-    border: 2px solid var(--primary-white);
+    border: 4px solid var(--primary-white);
     background-color: var(--primary-black);
     color: var(--primary-white);
     text-align: center;
