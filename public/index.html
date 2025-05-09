@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save & Assassin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <!-- Title Page -->
+    <div id="title-page" class="page">
+        <h1 class="game-title">Save & Assassin</h1>
+        <div class="name-input-container">
+            <input type="text" id="player-name" placeholder="Enter your name" maxlength="15">
+        </div>
+        <button id="play-button" class="btn">PLAY</button>
+    </div>
+
+    <!-- Lobby Page -->
+    <div id="lobby-page" class="page hidden">
+        <h2>Game Lobby</h2>
+        <div class="player-list-container">
+            <h3>Players:</h3>
+            <ul id="player-list"></ul>
+        </div>
+        <div class="lobby-buttons">
+            <button id="start-game-button" class="btn">START GAME</button>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="page hidden">
+        <div class="timer-container">
+            <div class="timer-bar">
+                <div id="timer-progress"></div>
+            </div>
+            <div id="timer-text">45</div>
+        </div>
+        
+        <div id="players-grid" class="players-grid"></div>
+        
+        <div id="results-overlay" class="hidden">
+            <div class="results-container">
+                <h2>Round Results</h2>
+                <div id="results-content"></div>
+                <div id="winner-announcement" class="hidden">
+                    <h2 id="winner-text"></h2>
+                    <button id="play-again-button" class="btn">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
