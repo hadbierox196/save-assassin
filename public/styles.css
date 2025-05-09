@@ -56,7 +56,7 @@ body {
 input[type="text"] {
     width: 100%;
     padding: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     border: 2px solid var(--primary-white);
     background-color: var(--primary-black);
     color: var(--primary-white);
@@ -176,7 +176,7 @@ input[type="text"] {
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     padding: 2px 5px;
     border-radius: 3px;
 }
